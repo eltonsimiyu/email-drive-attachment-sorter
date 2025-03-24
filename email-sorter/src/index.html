@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gmail Drive App</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        .btn-lg {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4">Gmail Drive App</h2>
+
+    <!-- Authenticate Button -->
+    <div class="d-grid gap-2 mb-3">
+        <button id="auth-btn" class="btn btn-primary btn-lg">Authenticate with Google</button>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="d-grid gap-2">
+        <button id="fetch-attachments-btn" class="btn btn-success btn-lg">Fetch Attachments</button>
+        <button id="upload-btn" class="btn btn-info btn-lg">Upload to Drive</button>
+        <button id="merge-folders-btn" class="btn btn-warning btn-lg">Merge Duplicate Folders</button>
+        <button id="delete-folders-btn" class="btn btn-danger btn-lg">Delete Empty Folders</button>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="mt-4">
+        <h4 class="text-center">Results</h4>
+        <ul id="result-list" class="list-group"></ul>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
